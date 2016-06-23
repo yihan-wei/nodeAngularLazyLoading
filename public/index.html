@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/styles/app.css"/>
+    <title>Node + Angular lazy loading</title>
+</head>
+<body>
+    <h1>My app : nodejs + angular + requirejs</hi>
+    <div id = 'nav_bar'>
+        <ul class="nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div id="main" class="container" ng-view></div>
+    <script type="text/javascript" src="/bower_components/requirejs/require.js" data-main="/scripts/bootstrap.js"></script>
+</body>
+</html>

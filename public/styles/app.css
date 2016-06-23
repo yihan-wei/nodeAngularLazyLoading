@@ -1,0 +1,7 @@
+.nav li{
+    display: inline-block;
+}
+
+.todoList{
+	font-size: 50%;
+}
