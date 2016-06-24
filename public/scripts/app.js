@@ -18,6 +18,10 @@ define(['routes','services/dependencyResolverFor'],function(config, dependencyRe
 	        app.service    = $provide.service;
 
             console.log("registering");
+           $locationProvider.html5Mode({
+                  enabled: true,
+                  requireBase: false
+                });
             if(config.routes !== undefined)
             {   
                 angular.forEach(config.routes, function(route, path)
