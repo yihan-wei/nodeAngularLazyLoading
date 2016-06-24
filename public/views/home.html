@@ -1,8 +1,11 @@
-<section class='todoList' ng-controller="HomeViewController">
+<div class='todoList article' ng-controller="HomeViewController">
 	<ul>
 		<li ng-repeat='item in todoList | orderBy:item.priority'>
 			{{item.todo}}
 			<span ng-if='item.isDone'>&#10004;</span>
 		</li>
 	</ul>
-</section>
+</div>
+<div class="aside">
+	This page shows my todo list, data got from data base.
+</div>
