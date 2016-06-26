@@ -1,5 +1,5 @@
 <div class='todoList article' ng-controller="HomeViewController">
-	<ul>
+	<ul class="todoList">
 		<li ng-repeat='item in todoList | orderBy:item.priority'>
 			{{item.todo}}
 			<span ng-if='item.isDone'>&#10004;</span>
