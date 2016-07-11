@@ -7,6 +7,10 @@ describe('test testing framework',function(){
 
 	descrit('test HomeViewController',function(){
 		it('test 1',function(){
-		})
-	})
-})
+			var $scope = {};
+			var controller = $controller('AboutViewController', {$scope:$scope});
+			console.log($scope.page);
+
+		});
+	});
+});

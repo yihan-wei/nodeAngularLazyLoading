@@ -2,19 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="/styles/app.css"/>
-    <title>Node + Angular lazy loading</title>
+    <title>Angular lazy loading</title>
 </head>
 <body>
-    <h1 class='title'>My app : nodejs + angular + requirejs</h1>
+    <h1 class='title'>Angular lazy loading : MEAN + requirejs</h1>
     <div id = 'nav_bar' class='nav_bar'>
         <ul class="nav">
-            <li class="active"><a href="/viewhome">Home</a></li>
-            <li><a href="/viewabout">About</a></li>
+            <li><a href="/viewhome">Home</a></li>
+            <li><a href="/viewabout">Just For Fun</a></li>
             <li><a href="/viewcontact">Contact</a></li>
         </ul>
     </div>
-    <div id="main" ng-view class="content"></div>
+    <div id="main" ng-view class="content">
+        Loading...
+    </div>
     <div class="footer">
         Keep learning new skills before too late ~~
     </div>   

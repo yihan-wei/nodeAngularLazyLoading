@@ -1,4 +1,4 @@
-<div class='todoList article' ng-controller="HomeViewController">
+<div class='todoList aside' ng-controller="HomeViewController">
 	<ul class="todoList">
 		<li ng-repeat='item in todoList | orderBy:item.priority'>
 			{{item.todo}}
@@ -6,6 +6,12 @@
 		</li>
 	</ul>
 </div>
-<div class="aside">
-	This page shows my todo list, data got from data base.
+<div class="article">
+	<h3>This page shows my todo list.<h3>
+	<p>Workflow:</p>
+	<ul>
+		<li>Load angular module from server if haven't been loaded yet;</li>
+		<li>Make a ajax call to get Emma's todo list api.</li>
+		<li>Reder the data</li>
+	</ul>
 </div>
