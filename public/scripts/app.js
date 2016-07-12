@@ -1,5 +1,5 @@
-define(['routes','services/dependencyResolverFor'],function(config, dependencyResolverFor){
-    var app = angular.module('app',['ngRoute']);
+define(['routes','services/dependencyResolverFor',''],function(config, dependencyResolverFor){
+    var app = angular.module('app',['ngRoute','ngAnimate']);
     app.config(
     [
         '$routeProvider',

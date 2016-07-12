@@ -12,8 +12,8 @@ define(['app'],function(app){
 				url:"https://plnkr.co/edit/DWT800XOpklgFWzcbldZ?p=preview"},
 				{title:"angular scopes",
 				url:"https://plnkr.co/edit/2GeEwQjRzmlzRIv8U7VS?p=preview"},
-				{title:"angular animation",
-				url:"https://plnkr.co/edit/BnI3HyyZBAA9TzeoxGrU?p=preview"}
+				{title:"keep alive",
+				url:"https://plnkr.co/edit/W9UQNiAJdl5i7WGSH7Fg?p=preview"}
 			]
 		}
 	]);

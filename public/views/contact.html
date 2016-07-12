@@ -3,9 +3,13 @@
     <p>{{user.describe}}</p>
     <p>{{user.email}}</p>
     <input ng-model=input>
-    <ul>
-    	<li ng-repeat="skill in skillSet | filter:input">{{skill}}</li>
+    <div>
+    	<div class="skillwrapper" ng-repeat="skill in skillSet | filter:input">
+    		<div class="skill">
+    			{{skill}}
+    		</div>
+    	</div>
     	...
-    </ul>
+    </div>
     <p>more things are ont the way</p>
 </section>
