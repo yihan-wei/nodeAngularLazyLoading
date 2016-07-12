@@ -1,9 +1,9 @@
 define(['app'],function(app){
-	app.controller('AboutViewController',
+	app.controller('FunViewController',
 	[
 		'$scope',
 		function($scope){
-			console.log('AboutViewController created');
+			console.log('FunViewController created');
 			$scope.background = "https://www.ucl.ac.uk/news/news-articles/1213/Crab_Nebula_square.jpg";
 			$scope.myPlunkerList = [
 				{title:"google chart sample",

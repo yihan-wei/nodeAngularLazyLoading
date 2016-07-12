@@ -1,12 +1,12 @@
 define(['app'], function(app)
 {
-	app.controller('HomeViewController',
+	app.controller('TodoViewController',
     [
         '$scope','todoService',
 
         function($scope,todoService)
         {
-            console.log("HomeViewController created");
+            console.log("TodoViewController created");
             $scope.todoList = [];
             todoService.getTodo('Emma').then(function(response){
                 console.log(response);

@@ -1,18 +1,18 @@
 define([],function(){
     return {
-        defaultRoutePaths:'/viewhome',
+        defaultRoutePaths:'/viewtodo',
         routes:{
-            '/viewhome':{
-                templateUrl:'/views/home.html',
+            '/viewtodo':{
+                templateUrl:'/views/todo.html',
                 dependencies:[
-                    'controllers/HomeViewController',
+                    'controllers/TodoViewController',
                     'services/todoService'
                 ]
             },
-            '/viewabout':{
-                templateUrl:'/views/about.html',
+            '/viewfun':{
+                templateUrl:'/views/fun.html',
                 dependencies:[
-                    'controllers/AboutViewController'
+                    'controllers/FunViewController'
                 ]
             },
             '/viewcontact':{
