@@ -70,6 +70,27 @@ body{
   height:50vh;
   position:relative;
 }
-.inline{
-	display: inline-block;
+.fixAboutView{
+	position: absolute;	
+	width: 40vw;
+	height: 30vh;
+	border:3px solid PaleVioletRed;
+	background-color: white;
+	opacity: 0.7;
+	padding:10px;
+}
+.upperRight{
+	top: 0;
+	right: 0;
+	font-size: 4vmin;
+}
+.bottomLeft{
+	bottom: 0;
+	left: 0;
+	font-size: 3vmin;
+}
+.container{
+	width: 100%;
+	height: 100%;
+	position: relative;
 }

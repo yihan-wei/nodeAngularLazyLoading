@@ -1,4 +1,10 @@
 <section ng-controller="ContactViewController">
-    <h1>{{page.heading}}</h1>
-    <p>Emma</p>
+    <h1>{{user.heading}}</h1>
+    <p>{{user.describe}}</p>
+    <p>{{user.email}}</p>
+    <input ng-model=input>
+    <ul>
+    	<li ng-repeat="skill in skillSet | filter:input">{{skill}}</li>
+    	...
+    </ul>
 </section>
