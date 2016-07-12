@@ -11,7 +11,8 @@ define(['app'], function(app)
         		console.log('service calling todo api');
             	var promise = $http({
 	            	method:'GET',
-		            url:'/api/todos/'+user
+		            url:'/api/todos/'+user,
+		            timeout:3000
 		            }).then(function(data){
 		            	return data;
 		            }).catch(function(){

@@ -6,6 +6,8 @@ module.exports = function (app) {
     app.use(bodyParser.urlencoded({extended:true}));
 
     app.get('/api/todos/:uname',function(req,res){
+        var date = new Date();
+        while(new Date()-date<1000){}
         Todos.find({username:req.params.uname},function(err,result){
             if(err) throw err;
             res.send(result);

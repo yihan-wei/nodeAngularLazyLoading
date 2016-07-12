@@ -1,17 +1,21 @@
 <div class='todoList aside' ng-controller="TodoViewController">
-	<ul class="todoList">
+	<ul ng-if='!todoCallFailed&&!todoCalling' class="todoList">
 		<li ng-repeat='item in todoList | orderBy:item.priority'>
 			{{item.todo}}
 			<span ng-if='item.isDone'>&#10004;</span>
 		</li>
 	</ul>
+	<div ng-if='todoCallFailed' class="errorMsg">Sorry the service is currently unavailable, please try later or refresh the page</div>
+	<div ng-if='todoCalling' class="loading">
+		<img src='/images/ajax-loader.gif'>Loading...
+	</div>
 </div>
 <div class="article">
 	<h3>This page shows my todo list.<h3>
 	<p>Workflow:</p>
 	<ul>
 		<li>Load angular module from server if haven't been loaded yet;</li>
-		<li>Make a ajax call to get Emma's todo list api.</li>
-		<li>Display the data</li>
+		<li>Make a ajax call to get Emma's todo list api.(There will be a 1s delay to mimic calling api)</li>
+		<li>Display the data if success, show error meessage if failed or timeout(3s)</li>
 	</ul>
 </div>
