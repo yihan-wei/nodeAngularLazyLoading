@@ -1,4 +1,5 @@
-<div class='todoList aside' ng-controller="TodoViewController">
+<div class='content'>
+<div class='aside' ng-controller="TodoViewController">
 	<ul ng-if='!todoCallFailed&&!todoCalling' class="todoList">
 		<li ng-repeat='item in todoList | orderBy:item.priority'>
 			{{item.todo}}
@@ -18,4 +19,5 @@
 		<li>Make a ajax call to get Emma's todo list api.(There will be a 1s delay to mimic calling api)</li>
 		<li>Display the data if success, show error meessage if failed or timeout(3s)</li>
 	</ul>
+</div>
 </div>

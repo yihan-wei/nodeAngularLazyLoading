@@ -22,22 +22,19 @@ body{
 .nav li{
     display: inline-block;
     margin:0 10px;
-    font-size: 130%;
     text-shadow: 2px 2px 2px LightPink;
 }
 .content{
-	display: flex;
+	display: block;
 
 }
 .article{
 	border:3px solid MistyRose;
 	padding:1%;
-	width: 60%;
 }
 .aside{
 	border:3px solid pink;
 	padding:1%;
-	width: 40%;
 }
 .todoList {
 	font-family: fantasy;
@@ -52,6 +49,21 @@ body{
 }
 .loading{
 	text-align: center;
+}
+@media screen and (min-width: 560px){
+	.content{
+		display: flex;
+	}	
+	.article{
+		width: 60%;
+	}
+	.aside{
+		width: 40%;
+	}
+	.nav li{
+		font-size: 130%;
+	}
+
 }
 .footer{
 	border: 3px solid plum;
