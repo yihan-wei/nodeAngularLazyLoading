@@ -1,6 +1,6 @@
 define([],function(){
     return {
-        defaultRoutePath:'/',
+        defaultRoutePaths:'/viewhome',
         routes:{
             '/viewhome':{
                 templateUrl:'/views/home.html',
