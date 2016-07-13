@@ -1,8 +1,8 @@
-<section ng-controller="ContactViewController">
+<section ng-controller="ContactViewController" class="viewborder">
     <h1>{{user.heading}}</h1>
     <p>{{user.describe}}</p>
     <p>{{user.email}}</p>
-    <input ng-model=input>
+    Searching Skill : <input ng-model=input>
     <div>
     	<div class="skillwrapper" ng-repeat="skill in skillSet | filter:input">
     		<div class="skill">
@@ -11,5 +11,5 @@
     	</div>
     	...
     </div>
-    <p>more things are ont the way</p>
+    <p>more things are on the way</p>
 </section>

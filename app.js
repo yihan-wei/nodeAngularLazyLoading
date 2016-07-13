@@ -26,6 +26,8 @@ app.get('/view*', function(req,res)
 setupController(app);
 apiController(app);
 
-mongoose.connect(config.getDbConnectionString());
+mongoose.connect(config.getDbConnectionString(),config.options);
+var conn = mongoose.connection;
+conn.on('error',console.error.bind(console,'connection error'));
 app.listen(port);
 console.log("Server started on port 3000");
