@@ -25,8 +25,7 @@ body{
     text-shadow: 2px 2px 2px LightPink;
 }
 .view{
-	position: absolute;
-	margin-right: 10px;
+	position: relative;
 }
 .view.ng-enter,
 .view.ng-leave{
@@ -128,7 +127,7 @@ body{
 }
 .upperRight{
 	top: 0;
-	right: 20px;
+	right: 0;
 	font-size: 4vmin;
 }
 .bottomLeft{
