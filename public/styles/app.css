@@ -24,7 +24,28 @@ body{
     margin:0 10px;
     text-shadow: 2px 2px 2px LightPink;
 }
+.view{
+	position: absolute;
+	margin-right: 10px;
+}
+.view.ng-enter,
+.view.ng-leave{
+  transition:0.5s linear all;
+}
 
+.view.ng-enter{
+	left:-100%;
+	opacity: 0;
+}
+.view.ng-enter.ng-enter-active,
+.view.ng-leave{
+	left:0;
+	opacity:1;
+}
+.view.ng-leave.ng-leave-active{
+	left:100%;
+  	opacity:0;
+}
 .content{
 	display: block;
 
@@ -107,7 +128,7 @@ body{
 }
 .upperRight{
 	top: 0;
-	right: 0;
+	right: 20px;
 	font-size: 4vmin;
 }
 .bottomLeft{
