@@ -5,7 +5,8 @@
     box-sizing: border-box;  
 }
 body{
-	margin:10px;
+	margin:0 10px;
+	position: relative;
 }
 .title{
 	text-align: center;
@@ -22,10 +23,13 @@ body{
 .nav li{
     display: inline-block;
     margin:0 10px;
-    text-shadow: 2px 2px 2px LightPink;
+    text-shadow: 2px 2px 30px LightPink;
+}
+.nav li:hover{
+	text-shadow: 2px 2px 2px LightPink;
 }
 .view{
-	position: relative;
+	position: absolute;
 }
 .view.ng-enter,
 .view.ng-leave{
@@ -47,7 +51,6 @@ body{
 }
 .content{
 	display: block;
-
 }
 .article{
 	border:3px solid MistyRose;
@@ -117,7 +120,7 @@ body{
   position:relative;
 }
 .fixAboutView{
-	position: absolute;	
+	position: absolute;
 	width: 40vw;
 	height: 30vh;
 	border:3px solid PaleVioletRed;
@@ -127,7 +130,7 @@ body{
 }
 .upperRight{
 	top: 0;
-	right: 0;
+	right: 20px;
 	font-size: 4vmin;
 }
 .bottomLeft{
@@ -135,11 +138,7 @@ body{
 	left: 0;
 	font-size: 3vmin;
 }
-.container{
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
+
 .viewborder{
 	border:solid 3px PaleVioletRed;
 	padding: 0 20px;
