@@ -12,7 +12,8 @@ define([],function(){
             '/viewfun':{
                 templateUrl:'/views/fun.html',
                 dependencies:[
-                    'controllers/FunViewController'
+                    'controllers/FunViewController',
+                    'directives/myDragable'
                 ]
             },
             '/viewcontact':{

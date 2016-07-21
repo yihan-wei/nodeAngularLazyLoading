@@ -2,14 +2,14 @@
 	<div class="limit">
 	    <img class="circle" ng-src="{{background}}" alt="image">
 	</div>
-	<div class="fixAboutView bottomLeft">
+	<div class="fixAboutView bottomLeft" my-dragable>
 		<p>My plunkers</p>
 		<ul>
 			<li ng-repeat ='item in myPlunkerList'><a ng-href="{{item.url}}">{{item.title}}</a></li>
 			...
 		</ul>
 	</div>
-	<div class="fixAboutView upperRight">
+	<div class="fixAboutView upperRight" my-dragable>
 		Just For Fun<br>See, the circle will change based on both view height and view width.
 	</div>
 

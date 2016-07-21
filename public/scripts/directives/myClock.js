@@ -19,7 +19,10 @@ define([],function(){
 					updateTime();
 				})
 			},
-			template:"<div>Time: {{currTime}} | Format:<input ng-model=\"format\"> </div>"
+			template:"<div>Time: {{currTime}} | "+
+						"<br class=\"smallScreenBr\"/>"+
+						"Format:<input ng-model=\"format\"> "+
+					"</div>"
 		}
 		return directive;
 	}])
