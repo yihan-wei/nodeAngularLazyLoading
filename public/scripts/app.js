@@ -1,6 +1,6 @@
 define(['routes','services/dependencyResolverFor','directives/myClock'],function(config, dependencyResolverFor,myClock){
     var app = angular.module('app',['ngRoute','ngAnimate']);
-    myClock(app);
+    app.directive('myClock',myClock);
     app.config(
     [
         '$routeProvider',

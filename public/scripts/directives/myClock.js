@@ -1,6 +1,5 @@
 define([],function(){
-	return function(app){
-		app.directive('myClock',['$interval','dateFilter',function($interval,dateFilter){
+	var myClockDir = function($interval,dateFilter){
 		var directive = {
 			strict:'E',
 			link:function(scope,element){
@@ -25,5 +24,7 @@ define([],function(){
 					"</div>"
 		}
 		return directive;
-	}])
-}})
+	}
+	myClockDir.$inject = ['$interval','dateFilter'];
+	return myClockDir;
+})

@@ -7,7 +7,9 @@ define(['app'],function(app){
 				var x=elem[0].offsetLeft;
 				var y=elem[0].offsetTop;
 				elem.css({
-					cursor:'grab'
+					cursor:'grab',
+					cursor: '-moz-grab',
+    				cursor: '-webkit-grab'
 				});
 				elem.on('mousedown',function(event){
 					event.preventDefault();
@@ -23,11 +25,17 @@ define(['app'],function(app){
 					elem.css({
 						top:y+'px',
 						left:x+'px',
-						cursor:'grabbing'
-
+						cursor:'grabbing',
+						cursor:'-moz-grabbing',
+						cursor:'-webkit-grabbing'
 					});
 				}
 				var mouseup = function(){
+					elem.css({
+					cursor:'grab',
+					cursor: '-moz-grab',
+    				cursor: '-webkit-grab'
+					});
 					$document.off('mousemove',mousemove);
 					$document.off('mouseup',mouseup);
 				}
